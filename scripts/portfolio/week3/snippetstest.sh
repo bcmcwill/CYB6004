@@ -1,0 +1,22 @@
+#!/bin/bash
+export black="\033[30m"
+export red="\033[31m"
+export green="\033[32m"
+export brown="\033[33m"
+export blue="\033[34m"
+export purple="\033[35m"
+export cyan="\033[36m"
+export grey="\033[37m"
+export BLACK="\033[40m"
+export RED="\033[41m"
+export GREEN="\033[42m"
+export BROWN="\033[43m"
+export BLUE="\033[44m"
+export PURPLE="\033[45m"
+export CYAN="\033[46m"
+export GREY="\033[47m"
+
+echo -e "${red}this is red"
+echo -e "${blue}this is blue"
+echo -e "${GREEN}this is green background"
+exit 0

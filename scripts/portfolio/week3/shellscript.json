@@ -1,0 +1,80 @@
+{
+	// Place your snippets for shellscript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"add a shebang": {
+		        "scope": "sh",
+		        "prefix": "shebang",
+		        "body": [
+		        "#!/bin/bash",
+		        ],
+		        "description": "Add shebang to script"
+	}
+
+	"Shell colour variables": {
+		        "scope": "sh",
+		        "prefix": "colour",
+		        "body": [
+				"export black=\"\\033[30m\"",
+				"export red=\"\\033[31m\"",
+				"export green=\"\\033[32m\"",
+				"export brown=\"\\033[33m\"",
+				"export blue=\"\\033[34m\"",
+				"export purple=\"\\033[35m\"",
+				"export cyan=\"\\033[36m\"",
+				"export grey=\"\\033[37m\"",
+				"export default=\"\\033[39m\"",
+				"export BLACK=\"\\033[40m\"",
+				"export RED=\"\\033[41m\"",
+				"export GREEN=\"\\033[42m\"",
+				"export BROWN=\"\\033[43m\"",
+				"export BLUE=\"\\033[44m\"",
+				"export PURPLE=\"\\033[45m\"",
+				"export CYAN=\"\\033[46m\"",
+				"export GREY=\"\\033[47m\"",
+				"export DEFAULT=\"\\033[49m\"",
+				],
+		        "description": "Add colour to shell variable"
+	}
+	"add case statement": {
+		        "scope": "sh",
+		        "prefix": "case",
+		        "body": [
+		        "case $var in",
+					"{testitems} )",
+						"# code if match",
+						";;",
+					"{testitems} )",
+						"# code if match",
+						";;",
+					"{testitems} )",
+						"# code if match",
+						";;",
+					"*) # default case",
+						"# code if default case",
+						";;",
+				"esac",
+		        ],
+		        "description": "Add case statement structure"
+	}
+	"user prompt": {
+		        "scope": "sh",
+		        "prefix": "promptuser",
+		        "body": [
+		        "read -p '{user prompt}: ' var",
+		        ],
+		        "description": "Add user prompt"
+	}
+
+}
